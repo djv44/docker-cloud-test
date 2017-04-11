@@ -7,4 +7,4 @@ RUN apt-get install -y python3-pip
 RUN pip3 install flask
 EXPOSE 8080
 
-RUN python3 unh_test.py
+RUN python3 unh698_test.py
