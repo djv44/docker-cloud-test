@@ -17,6 +17,14 @@ class FlaskrTestCase(unittest.TestCase):
         # Chech that the page contians the desired phrase
         assert b'UNH698 Website' in rv.data
 
+    def test_link_to_my_page(self):
+        rv = self.app.get('/')
+        #search the page contents for the link to your topic
+        #replace xxxxxxx with text you expect tp see on main page that links to subpage
+        assert b'Football Cards' in rv.data
 
+    def test_my_topic(self):
+        rv = self.app.get(a href= "topic.html">Football Cards</a>)    
+        assert b'Football Cards' in rv.data
 if __name__ == '__main__':
     unittest.main()
