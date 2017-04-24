@@ -24,7 +24,7 @@ class FlaskrTestCase(unittest.TestCase):
         assert b'Football Cards' in rv.data
 
     def test_my_topic(self):
-        rv = self.app.get(a href= "topic.html">Football Cards</a>)    
+        rv = self.app.get('/topic')    
         assert b'Football Cards' in rv.data
 if __name__ == '__main__':
     unittest.main()
