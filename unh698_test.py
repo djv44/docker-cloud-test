@@ -18,7 +18,7 @@ class FlaskrTestCase(unittest.TestCase):
         assert b'UNH698 Website' in rv.data
 
     def test_main_Page(self):
-        rv = self.app.get('/')
+        rv = self.app.get('/main')
         #search the page contents for the link to your topic
         #replace xxxxxxx with text you expect tp see on main page that links to subpage
         assert b'Collecting' in rv.data
