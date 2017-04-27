@@ -17,7 +17,7 @@ class FlaskrTestCase(unittest.TestCase):
         # Chech that the page contians the desired phrase
         assert b'UNH698 Website' in rv.data
 
-    def test_home_Page(self):
+    def test_main_Page(self):
         rv = self.app.get('/')
         #search the page contents for the link to your topic
         #replace xxxxxxx with text you expect tp see on main page that links to subpage

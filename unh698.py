@@ -7,7 +7,7 @@ def home():
 	#return "UNH698 Website"
 
 @app.route('/main')
-def homePage():
+def mainPage():
 	return render_template('main.html')
 
 @app.route('/my-topic')
