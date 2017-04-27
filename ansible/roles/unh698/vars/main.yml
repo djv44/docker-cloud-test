@@ -3,3 +3,4 @@
 # that will be used in the unh698 role.
 unh698_image: djv44/docker-cloud-test
 unh698_command: my_AWS_IP: 54.215.187.134
+unh698_command: python3 unh698.py
